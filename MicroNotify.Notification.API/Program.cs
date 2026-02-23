@@ -1,3 +1,4 @@
+using MicroNotify.Notification.API.Services;
 using MicroNotify.Notification.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<NotificationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Register gRPC client
+builder.Services.AddScoped<UserGrpcClient>();
 
 var app = builder.Build();
 
