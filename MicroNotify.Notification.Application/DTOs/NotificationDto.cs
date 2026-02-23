@@ -12,5 +12,9 @@ namespace MicroNotify.Notification.Application.DTOs
         public bool IsRead { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? ReadAt { get; set; }
+        
+        // User info from gRPC
+        public string? UserEmail { get; set; }
+        public string? UserFullName { get; set; }
     }
 }
