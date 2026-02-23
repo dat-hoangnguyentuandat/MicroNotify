@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MicroNotify.Notification.Domain\MicroNotify.Notification.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
