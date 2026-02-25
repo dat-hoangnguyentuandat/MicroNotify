@@ -1,0 +1,6 @@
+@MicroNotify.Identity.API_HostAddress = http://localhost:5255
+
+GET {{MicroNotify.Identity.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
